@@ -1,5 +1,6 @@
 # Antim theme
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-green.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
 ## Introduction
 
 This is the Antim theme created to save your eyes.
