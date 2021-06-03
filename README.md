@@ -1,9 +1,6 @@
 # Antim theme
-<<<<<<< HEAD
+
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-green.svg)](https://www.gnu.org/licenses/gpl-3.0)
-=======
-[![License GPL 3][badge-license]](http://www.gnu.org/licenses/gpl-3.0.txt)
->>>>>>> 0f3d904c9456657412ab49d316662e0039fbd1ad
 
 ## Introduction
 
