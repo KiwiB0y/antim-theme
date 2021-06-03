@@ -1,20 +1,21 @@
+# Antim theme
+[![License GPL 3][badge-license]](http://www.gnu.org/licenses/gpl-3.0.txt)
 
-
-# Introduction
+## Introduction
 
 This is the Antim theme created to save your eyes.
 
 
-## features
+## Features
 
 It supports most major modes in GNU Emacs and it is in development at the moment.
 Currently it has only GUI support but terminal is on the way!
 
 
-# Installation
+## Installation
 
 
-## Clone
+### Clone
 
 Just clone the github repository.
 
@@ -23,7 +24,7 @@ Just clone the github repository.
     (load-theme 'kiwi t)
 
 
-## Melpa
+### Melpa
 
 Melpa support is on the way!
 
