@@ -110,14 +110,16 @@ Reload the theme after changing anything in this group."
                       (list :weight 'normal :foreground antim-fg)
                     (list :weight 'bold :foreground antim-pink)))
 	       (read-multiple-choice-face :inherit completions-first-difference)
+               (mode-line :background ,antim-pink :foreground ,antim-current)
+
 	       ; syntax
 	       (font-lock-builtin-face :foreground ,antim-orange)
                (font-lock-comment-face :foreground ,antim-comment)
                (font-lock-comment-delimiter-face :foreground ,antim-comment)
                (font-lock-constant-face :foreground ,antim-string-cyan)
                (font-lock-doc-face :foreground ,antim-comment)
-               (font-lock-function-name-face :foreground ,antim-green :weight bold)
-               (font-lock-keyword-face :weight bold :foreground ,antim-pink)
+               (font-lock-function-name-face :foreground ,antim-pink :weight bold)
+               (font-lock-keyword-face :weight bold :foreground ,antim-green)
                (font-lock-negation-char-face :foreground ,antim-string-cyan)
                (font-lock-preprocessor-face :foreground ,antim-orange)
                (font-lock-reference-face :foreground ,antim-string-cyan)
@@ -150,7 +152,54 @@ Reload the theme after changing anything in this group."
                (dired-marked :foreground ,antim-orange :weight bold)
                (dired-perm-write :foreground ,antim-fg :underline t)
                (dired-symlink :foreground ,antim-yellow :weight normal :slant italic)
-               (dired-warning :foreground ,antim-orange :underline t))))
+               (dired-warning :foreground ,antim-orange :underline t)
+
+               ;; company
+               (company-echo-common :foreground ,antim-bg :background ,antim-fg)
+               (company-echo :inherit company-echo-common)
+               (company-preview :background ,antim-current :foreground ,antim-light-green)
+               (company-preview-common :inherit company-preview
+                                       :foreground ,antim-light-green)
+               (company-preview-search :inherit company-preview
+                                       :foreground ,antim-green)
+               (company-scrollbar-bg :background ,antim-comment)
+               (company-scrollbar-fg :foreground ,dark-blue)
+               (company-tooltip :foreground ,antim-fg :background ,antim-current)
+               (company-tooltip-search :foreground ,antim-green
+                                       :underline t)
+               (company-tooltip-search-selection :background ,antim-green
+                                                 :foreground ,antim-pink)
+               (company-tooltip-selection :inherit match)
+               (company-tooltip-mouse :background ,bg2-dark-pink)
+               (company-tooltip-common :foreground ,antim-light-green :weight bold)
+               (company-tooltip-common-selection :inherit company-tooltip-common)
+               (company-tooltip-annotation :foreground ,antim-string-cyan)
+
+               ;; isearch
+               (isearch :inherit match :weight bold)
+               (isearch-fail :foreground ,bg2-dark-pink :background ,antim-orange)
+
+               ;; org
+               (org-ellipsis :foreground ,antim-pink)
+               (org-document-title :weight bold :foreground ,antim-string-cyan
+                                   ,@(when antim-enlarge-headings
+                                       (list :height antim-height-doc-title)))
+               (org-level-1 :inherit bold :foreground ,antim-green
+                            ,@(when antim-enlarge-headings
+                                (list :height antim-height-title-1)))
+               (org-level-2 :inherit bold :foreground ,dark-blue
+                            ,@(when antim-enlarge-headings
+                                (list :height antim-height-title-2)))
+               (org-level-3 :weight normal :foreground ,antim-purple
+                            ,@(when antim-enlarge-headings
+                                (list :height antim-height-title-3)))
+               (org-level-4 :weight normal :foreground ,antim-light-green)
+               (org-level-5 :weight normal :foreground ,antim-green)
+               (org-level-6 :weight normal :foreground ,dark-blue)
+               (org-level-7 :weight normal :foreground ,antim-purple)
+               (org-level-8 :weight normal :foreground ,antim-light-green)
+               (org-link :foreground ,antim-yellow :underline t))))
+
 
   (apply #'custom-theme-set-faces
 	 'antim
