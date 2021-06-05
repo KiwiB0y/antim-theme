@@ -18,11 +18,13 @@ Currently it has only GUI support but terminal is on the way!
 
 ### Clone
 
-Just clone the github repository.
+Just clone the github repository to a folder in your `~/.emacs.d` folder and add the following
+code to your `init.el` or `.emacs` file to initialize the theme.
 
-    ;; Add the Antim theme like so
+
+    ;; Add the Antim theme
     (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
-    (load-theme 'kiwi t)
+    (load-theme 'antim t)
 
 
 ### Melpa
