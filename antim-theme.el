@@ -156,7 +156,6 @@ Reload the theme after changing anything in this group."
 
                ;; company
                (company-echo-common :foreground ,antim-bg :background ,antim-fg)
-               (company-echo :inherit company-echo-common)
                (company-preview :background ,antim-current :foreground ,antim-light-green)
                (company-preview-common :inherit company-preview
                                        :foreground ,antim-light-green)
@@ -166,10 +165,10 @@ Reload the theme after changing anything in this group."
                (company-scrollbar-fg :foreground ,dark-blue)
                (company-tooltip :foreground ,antim-fg :background ,antim-current)
                (company-tooltip-search :foreground ,antim-green
-                                       :underline t)
+                                       :underline t) 
                (company-tooltip-search-selection :background ,antim-green
-                                                 :foreground ,antim-pink)
-               (company-tooltip-selection :inherit match)
+                                                 :foreground ,antim-pink) 
+               (company-tooltip-selection :inherit hl-line)
                (company-tooltip-mouse :background ,bg2-dark-pink)
                (company-tooltip-common :foreground ,antim-light-green :weight bold)
                (company-tooltip-common-selection :inherit company-tooltip-common)
