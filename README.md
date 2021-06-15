@@ -12,6 +12,7 @@ This is the Antim theme created to save your eyes.
 It supports most major modes in GNU Emacs and it is in development at the moment.
 Currently it has only GUI support but terminal is on the way!
 
+**pre-release** state
 
 ## Installation
 
@@ -30,4 +31,3 @@ code to your `init.el` or `.emacs` file to initialize the theme.
 ### Melpa
 
 Melpa support is on the way!
-
