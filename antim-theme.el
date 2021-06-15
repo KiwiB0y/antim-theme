@@ -142,6 +142,14 @@ Reload the theme after changing anything in this group."
                (rainbow-delimiters-depth-8-face :foreground ,antim-delimiter-four)
                (rainbow-delimiters-unmatched-face :foreground ,antim-orange :background ,bg2-dark-pink)
 
+               ;; show-paren
+               (show-paren-match-face :background ,dark-blue
+                                      :foreground ,antim-yellow)
+               (show-paren-match :background ,dark-blue
+                                 :foreground ,antim-yellow)
+               (show-paren-match-expression :inherit match)
+               (show-paren-mismatch :inherit font-lock-warning-face)
+
 	       ;; dired
                (dired-directory :foreground ,antim-green :weight normal)
                (dired-flagged :foreground ,antim-pink)
@@ -179,6 +187,9 @@ Reload the theme after changing anything in this group."
                (isearch-fail :foreground ,bg2-dark-pink :background ,antim-orange)
 
                ;; org
+               (org-formula :foreground ,antim-pink)
+               (org-done :foreground ,antim-cursor-green)
+               (org-hide :foreground ,antim-bg :background ,antim-bg)
                (org-ellipsis :foreground ,antim-pink)
                (org-document-title :weight bold :foreground ,antim-string-cyan
                                    ,@(when antim-enlarge-headings
@@ -186,17 +197,17 @@ Reload the theme after changing anything in this group."
                (org-level-1 :inherit bold :foreground ,antim-green
                             ,@(when antim-enlarge-headings
                                 (list :height antim-height-title-1)))
-               (org-level-2 :inherit bold :foreground ,dark-blue
+               (org-level-2 :inherit bold :foreground ,antim-light-green
                             ,@(when antim-enlarge-headings
                                 (list :height antim-height-title-2)))
                (org-level-3 :weight normal :foreground ,antim-purple
                             ,@(when antim-enlarge-headings
                                 (list :height antim-height-title-3)))
-               (org-level-4 :weight normal :foreground ,antim-light-green)
+               (org-level-4 :weight normal :foreground ,dark-blue)
                (org-level-5 :weight normal :foreground ,antim-green)
-               (org-level-6 :weight normal :foreground ,dark-blue)
+               (org-level-6 :weight normal :foreground ,antim-light-green)
                (org-level-7 :weight normal :foreground ,antim-purple)
-               (org-level-8 :weight normal :foreground ,antim-light-green)
+               (org-level-8 :weight normal :foreground ,dark-blue)
                (org-link :foreground ,antim-yellow :underline t))))
 
 
