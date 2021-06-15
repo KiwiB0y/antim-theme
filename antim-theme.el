@@ -19,6 +19,8 @@
 
 ;; This theme is a GNU Emacs theme created by Kiwib0y
 ;; It's only GUI support for now
+;; This is not an official major release
+;; Feel free to contribute!
 
 ;;; Code:
 (require 'cl-lib)
