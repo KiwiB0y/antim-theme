@@ -106,7 +106,7 @@ Reload the theme after changing anything in this group."
                (link :foreground ,antim-yellow :underline t)
                (linum :slant italic :foreground ,antim-pink :background ,antim-bg)
                (line-number :slant italic :foreground ,antim-fg :background ,antim-bg)
-               (match :background ,antim-green :foreground ,antim-bg)
+               (match :background ,bg2-dark-pink :foreground ,antim-bg)
                (mode-line :background ,antim-pink :foreground ,antim-current)
 	       (minibuffer-prompt
 		,@(if antim-alternate-mode-line-and-minibuffer
