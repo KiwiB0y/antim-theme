@@ -107,12 +107,13 @@ Reload the theme after changing anything in this group."
                (linum :slant italic :foreground ,antim-pink :background ,antim-bg)
                (line-number :slant italic :foreground ,antim-fg :background ,antim-bg)
                (match :background ,antim-green :foreground ,antim-bg)
+               (mode-line :background ,antim-pink :foreground ,antim-current)
 	       (minibuffer-prompt
 		,@(if antim-alternate-mode-line-and-minibuffer
                       (list :weight 'normal :foreground antim-fg)
                     (list :weight 'bold :foreground antim-pink)))
 	       (read-multiple-choice-face :inherit completions-first-difference)
-               (mode-line :background ,antim-pink :foreground ,antim-current)
+               (region :inherit match :extend t)
 
 	       ; syntax
 	       (font-lock-builtin-face :foreground ,antim-orange)
@@ -166,23 +167,24 @@ Reload the theme after changing anything in this group."
 
                ;; company
                (company-echo-common :foreground ,antim-bg :background ,antim-fg)
-               (company-preview :background ,antim-current :foreground ,antim-light-green)
+               (company-preview :background ,dark-blue :foreground ,dark-blue)
                (company-preview-common :inherit company-preview
                                        :foreground ,antim-light-green)
                (company-preview-search :inherit company-preview
-                                       :foreground ,antim-green)
+                                       :foreground ,antim-cursor-green)
                (company-scrollbar-bg :background ,antim-comment)
-               (company-scrollbar-fg :foreground ,dark-blue)
-               (company-tooltip :foreground ,antim-fg :background ,antim-current)
+               (company-scrollbar-fg :foreground ,bg2-dark-pink)
+               (company-tooltip :foreground ,antim-fg :background ,bg2-dark-pink)
                (company-tooltip-search :foreground ,antim-green
                                        :underline t) 
                (company-tooltip-search-selection :background ,antim-green
-                                                 :foreground ,antim-pink) 
-               (company-tooltip-selection :inherit hl-line)
-               (company-tooltip-mouse :background ,bg2-dark-pink)
+                                                 :foreground ,antim-current)
+               (company-tooltip-selection :inherit match)
+               (company-tooltip-mouse :background ,antim-fg)
                (company-tooltip-common :foreground ,antim-light-green :weight bold)
                (company-tooltip-common-selection :inherit company-tooltip-common)
                (company-tooltip-annotation :foreground ,antim-string-cyan)
+               (company-tooltip-annotation-selection :inherit company-tooltip-annotation)
 
                ;; isearch
                (isearch :inherit match :weight bold)
