@@ -19,8 +19,8 @@ Currently it has only GUI support but terminal is on the way!
 
 ### Clone
 
-Just clone the github repository to a folder in your `~/.emacs.d` folder and add the following
-code to your `init.el` or `.emacs` file to initialize the theme.
+Just clone the github repository to a `/themes` folder in your `~/.emacs.d` folder and add the
+following code to your `init.el` or `.emacs` file to initialize the theme.
 
 
     ;; Add the Antim theme
