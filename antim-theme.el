@@ -108,7 +108,7 @@ Reload the theme after changing anything in this group."
                (line-number :slant italic :foreground ,antim-fg :background ,antim-bg)
                (match :background ,bg2-dark-pink :foreground ,antim-bg)
                (mode-line :background ,bg2-dark-pink :foreground ,antim-current)
-               (mode-line-inactive :background ,antim-purple :foreground ,antim-current)
+               (mode-line-inactive :background ,antim-current :foreground ,antim-pink)
 	       (minibuffer-prompt
 		,@(if antim-alternate-mode-line-and-minibuffer
                       (list :weight 'normal :foreground antim-fg)
