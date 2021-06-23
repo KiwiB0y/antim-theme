@@ -20,10 +20,7 @@ Currently it has only GUI support but terminal is on the way!
   * dired
   * rainbow-delimiters
 
-**pre-release** state
-
 ## Installation
-
 
 ### Clone
 
