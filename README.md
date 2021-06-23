@@ -12,6 +12,14 @@ This is the Antim theme created to save your eyes.
 It supports most major modes in GNU Emacs and it is in development at the moment.
 Currently it has only GUI support but terminal is on the way!
 
+### Supported functionality
+  * syntax
+  * org
+  * company
+  * show-paren
+  * dired
+  * rainbow-delimiters
+
 **pre-release** state
 
 ## Installation
