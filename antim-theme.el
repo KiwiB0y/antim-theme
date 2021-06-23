@@ -107,7 +107,8 @@ Reload the theme after changing anything in this group."
                (linum :slant italic :foreground ,antim-pink :background ,antim-bg)
                (line-number :slant italic :foreground ,antim-fg :background ,antim-bg)
                (match :background ,bg2-dark-pink :foreground ,antim-bg)
-               (mode-line :background ,antim-pink :foreground ,antim-current)
+               (mode-line :background ,bg2-dark-pink :foreground ,antim-current)
+               (mode-line-inactive :background ,antim-purple :foreground ,antim-current)
 	       (minibuffer-prompt
 		,@(if antim-alternate-mode-line-and-minibuffer
                       (list :weight 'normal :foreground antim-fg)
@@ -192,7 +193,7 @@ Reload the theme after changing anything in this group."
 
                ;; org
                (org-formula :foreground ,antim-pink)
-               (org-done :foreground ,antim-cursor-green)
+               (org-done :foreground ,dark-blue)
                (org-hide :foreground ,antim-bg :background ,antim-bg)
                (org-ellipsis :foreground ,antim-pink)
                (org-document-title :weight bold :foreground ,antim-string-cyan
@@ -212,7 +213,14 @@ Reload the theme after changing anything in this group."
                (org-level-6 :weight normal :foreground ,antim-light-green)
                (org-level-7 :weight normal :foreground ,antim-purple)
                (org-level-8 :weight normal :foreground ,dark-blue)
-               (org-link :foreground ,antim-yellow :underline t))))
+               (org-link :foreground ,antim-yellow :underline t)
+               (org-priority :foreground ,antim-string-cyan)
+               (org-scheduled :foreground ,dark-blue)
+               (org-scheduled-previously :foreground ,antim-string-cyan)
+               (org-scheduled-today :foreground ,antim-light-green)
+               (org-sexp-date :foreground ,other-white)
+               (org-special-keyword :foreground ,antim-string-cyan)
+               (org-table :foreground ,bg2-dark-pink))))
 
 
   (apply #'custom-theme-set-faces
@@ -226,7 +234,7 @@ Reload the theme after changing anything in this group."
 		    (setq kind 'graphic-colors))
 		  (cl-progv color-names (symbol-value kind)
 		    (eval `(backquote ,spec))))))
-	   (cl-loop for (face . spec) in faces
+           (cl-loop for (face . spec) in faces
 		    collect `(,face
 			      ((((min-colors 16777216)) ; fully graphical environment
 				,(funcall expand-for-kind 'graphic-colors spec))))))))
@@ -242,5 +250,8 @@ Reload the theme after changing anything in this group."
 ;; no-byte-compile: t
 ;; indent-tabs-mode: nil
 ;; End:
+
+
+;; (antim-theme :fetcher github :repo "KiwiB0y/antim-theme")
 
 ;;; antim-theme.el ends here
