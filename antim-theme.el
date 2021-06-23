@@ -4,7 +4,7 @@
 ;; Code licensed under the GNU GPL v.3 license
 
 ;; Author: KiwiB0y
-;; Version: 0.0.1
+;; Version: 1.0.0
 ;; URL: https://github.com/KiwiB0y/antim-theme
 
 
@@ -246,12 +246,7 @@ Reload the theme after changing anything in this group."
 
 (provide-theme 'antim)
 
-;; Local Variables:
-;; no-byte-compile: t
-;; indent-tabs-mode: nil
 ;; End:
-
-
 ;; (antim-theme :fetcher github :repo "KiwiB0y/antim-theme")
 
 ;;; antim-theme.el ends here
