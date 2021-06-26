@@ -250,9 +250,9 @@ Reload the theme after changing anything in this group."
 
 (provide-theme 'antim)
 
+;; Local Variables:
+;; no-byte-compile: t
+;; indent-tabs-mode: nil
 ;; End:
-
-;; melpa recipe
-;; (antim-theme :fetcher github :repo "KiwiB0y/antim-theme")
 
 ;;; antim-theme.el ends here
