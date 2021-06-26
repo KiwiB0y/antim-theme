@@ -1,4 +1,4 @@
-;;; antim-theme.el --- the dark theme created to save your eye -*- lexical-binding: t; -*-
+;;; antim-theme.el --- the dark theme created to save your eyes
 
 ;; Copyright 2021-present, All rights reserved
 ;; Code licensed under the GNU GPL v.3 license
