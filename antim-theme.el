@@ -222,7 +222,6 @@ Reload the theme after changing anything in this group."
                (org-special-keyword :foreground ,antim-string-cyan)
                (org-table :foreground ,bg2-dark-pink))))
 
-
   (apply #'custom-theme-set-faces
 	 'antim
 	 (let ((color-names (mapcar #'car colors))
