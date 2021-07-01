@@ -84,10 +84,10 @@ Reload the theme after changing anything in this group."
                 (antim-yellow          "#f0dc7d")                   ; official yellow
 
                 ;; Other colors
-                (bg2-dark-pink         "#452a3f")
-                (fg2                   "#b6b6b2")
-		(other-white           "#ddefff")
-		(dark-blue             "#19537f")
+                (bg2-dark-pink         "#452a3f")                   ; second background
+                (fg2                   "#b6b6b2")                   ; second foreground
+		(other-white           "#ddefff")                   ; other  white
+		(dark-blue             "#19537f")                   ; dark   blue
 
 		;; delimiters
 		(antim-delimiter-one   "#cf4a96")
