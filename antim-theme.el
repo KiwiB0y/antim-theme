@@ -198,7 +198,7 @@ Reload the theme after changing anything in this group."
 
                ;; org
                (org-formula :foreground ,antim-pink)
-               (org-done :foreground ,dark-blue)
+               (org-done :weight bold :foreground ,dark-blue)
                (org-hide :foreground ,antim-bg :background ,antim-bg)
                (org-ellipsis :foreground ,antim-pink)
                (org-document-title :weight bold :foreground ,antim-string-cyan
